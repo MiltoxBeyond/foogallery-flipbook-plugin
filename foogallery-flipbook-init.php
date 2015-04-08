@@ -18,7 +18,7 @@ if ( !class_exists( 'Flipbook_Lightbox_FooGallery_Extension_Init' ) ) {
 				'description'=> __('Flipbook effect for foogallery', 'foogallery-flipbook'),
 				'author'=> ' Milton Zurita',
 				'author_url'=> 'http://www.miltonzurita.com',
-				'thumbnail'=> FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_URL . '/assets/extension_bg.png',
+				'thumbnail'=> FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_URL . '/img/extension_bg.png',
 				'tags'=> array( __('lightbox', 'foogallery') ),	//use foogallery translations
 				'categories'=> array( __('Build Your Own', 'foogallery') ), //use foogallery translations
 				'source'=> 'generated'
