@@ -20,6 +20,9 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
+define('FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_URL', plugin_dir_url( __FILE__ ));
+define('FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_VERSION', '1.0.0');
+
 require_once( 'foogallery-flipbook-init.php' );
 require_once( __DIR__.'/classes/FlipbookExtension.php' );
 	
