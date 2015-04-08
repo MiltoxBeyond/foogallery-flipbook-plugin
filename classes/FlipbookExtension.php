@@ -48,5 +48,4 @@ class Flipbook_Lightbox_FooGallery_Extension {
 			}
 			return $attr;
 		}
-	}
 }
