@@ -1,5 +1,25 @@
-/*
-
-Add any CSS that is specific to your Flipbook extension
-
-*/
+.flipbook-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+  text-align: center;
+  overflow-y: auto;
+  background: rgba(204, 204, 204, 0.7);
+}
+.flipbook-wrapper .flipbook-container {
+  display: none;
+  font-size: 0;
+}
+.flipbook-wrapper .flipbook-container .page {
+  font-size: 18pt;
+  display: inline-block;
+  max-width: 50%;
+  background: #FFF;
+  color: #555;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
