@@ -30,8 +30,8 @@ class Flipbook_Lightbox_FooGallery_Extension {
 		 */
 		function add_required_files() {
 			//enqueue the lightbox script
-			wp_enqueue_script( 'flipbook-extras', FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_URL . 'extras/modernizr.2.5.3.min.js', array('jquery'), FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_VERSION );
-			wp_enqueue_script( 'flipbook', FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_URL . 'lib/lightbox-flipbook.js', array('jquery'), FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_VERSION );
+			wp_enqueue_script( 'flipbook-extras', FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_URL . 'extras/modernizr.2.5.3.min.js', array(), FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_VERSION );
+			wp_enqueue_script( 'flipbook', FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_URL . 'lib/lightbox-flipbook.js', array(), FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_VERSION );
 			//optionl : enqueu the init code to hook up your lightbox
 			//wp_enqueue_script( 'flipbook_init', FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_URL . 'js/lightbox-flipbook-init.js', array('flipbook'), FLIPBOOK_LIGHTBOX_FOOGALLERY_EXTENSION_VERSION );
 			//enqueue the lightbox stylesheets

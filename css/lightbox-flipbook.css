@@ -1,7 +1,7 @@
 .flipbook-wrapper {
   display: none;
   position: fixed;
-  z-index: 101;
+  z-index: 10000;
   top: 0;
   left: 0;
   right: 0;
@@ -11,15 +11,49 @@
   overflow-y: auto;
   background: rgba(204, 204, 204, 0.7);
 }
+.flipbook-wrapper .flipbook-overlay {
+  background: rgba(204, 204, 204, 0.7);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+}
 .flipbook-wrapper .flipbook-container {
   display: none;
+  background: #4d7f7f url(../img/cover.jpg) repeat;
   font-size: 0;
+  margin: 0 auto;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  height: 90%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.flipbook-wrapper .flipbook-container .page {
+.flipbook-wrapper .flipbook-container .page .page-inner {
   font-size: 18pt;
   display: inline-block;
   max-width: 50%;
   background: #FFF;
   color: #555;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.flipbook-wrapper .flipbook-container .page .page-inner:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: transparent url(../img/shadow.png) repeat-y;
+  background-size: 100% 1px;
+}
+.flipbook-wrapper .flipbook-container .page .page-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
